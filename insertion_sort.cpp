@@ -29,7 +29,7 @@ void print(int a[],int n){
 int main()
 {
 	// prints hello world
-	// cout << "Hello World jsdfjdsfhkhdgfhkd";
+	// cout << "Hello World ";
     int a[]={3,5,2,8,7};
     print(a,5);
     cout<<endl;
