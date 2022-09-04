@@ -11,6 +11,7 @@ struct circularQueue
 void enqueue(struct circularQueue *q, int val){
     if((q->r+1)%q->size==q->f){
         printf("This Queue is full");
+     return;
     }
     if(q->f==-1){
         q->f=0;
@@ -23,6 +24,7 @@ void enqueue(struct circularQueue *q, int val){
 int dequeue(struct circularQueue *q){
     if(q->f==-1){
         printf("This Queue is empty");
+     return;
     }
     int result =q->arr[q->f];
     if(q->f==q->r){
